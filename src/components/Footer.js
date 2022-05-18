@@ -18,7 +18,7 @@ const Empty = styled.section`
 const EmptyUnderHr = styled.hr`
   border: dashed 1px #a9a9a9;
   text-align: center;
-  width: 80%;
+  width: 90%;
 `;
 
 const Top = styled.section`
@@ -65,22 +65,65 @@ const TopUnderHr = styled.hr`
 `;
 
 const Bottom = styled.section`
-  height: 200px;
+  height: 220px;
 `;
 
 const Left = styled.section`
   width: 50%;
   height: 200px;
+  float: left;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  &:after {
+    content: "";
+    border-right: dashed 2px #a9a9a9;
+    height: 150px;
+  }
 `;
 
 const CompanyTitle = styled.div`
   height: 160px;
-  border-right: dashed 2px #a9a9a9;
+  text-align: center;
+  padding-right: 40px;
 `;
 
-const CompanyTitleLogo = styled.img``;
+const CompanyTitleLogo = styled.img`
+  width: 90%;
+`;
 
-const CompanyTitleText = styled.p``;
+const Br = styled.br``;
+
+const CompanyTitleText = styled.div`
+  color: #a9a9a9;
+  font-size: 18px;
+  padding-top: 10px;
+`;
+
+const Right = styled.section`
+  width: 50%;
+  height: 200px;
+  float: right;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+`;
+
+const CompanyInfo = styled.div`
+  padding-left: 40px;
+`;
+
+const CompanyInfoName = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+  color: #a9a9a9;
+  padding-bottom: 10px;
+`;
+
+const CompanyInfoDetails = styled.div`
+  font-size: 14px;
+  color: #a9a9a9;
+`;
 
 function Footer() {
   return (
@@ -105,21 +148,26 @@ function Footer() {
                 src="/img/grey_logo.png"
                 alt="grey_logo"
               ></CompanyTitleLogo>
+              <Br />
               <CompanyTitleText>새로운 인터넷 서점</CompanyTitleText>
             </CompanyTitle>
           </Left>
-          {/* <Right>
-          <CompanyInfo>
-            <CompanyInfoName>(주)북킵온앤온</CompanyInfoName>
-            <CompanyInfoDetails>
-              인천광역시 계양구 마장로 대표 : 정지인 개인정보보호책임자: 정지인
-              bookeepononhelp@bookeeponon.com 사업자등록번호 : 000-00-00000
-              통신판매업신고 : 제 0000-00000호 사업자 정보확인 호스팅 서비스업자
-              : (주)북킵온앤온 Copyright ⓒ bookeeponon Crop. All Rights
-              Reserved.
-            </CompanyInfoDetails>
-          </CompanyInfo>
-        </Right> */}
+          <Right>
+            <CompanyInfo>
+              <CompanyInfoName>(주)북킵온앤온</CompanyInfoName>
+              <CompanyInfoDetails>
+                인천광역시 계양구 00로 000번길 00-00
+                <Br />
+                대표 : 정지인 bookeepononhelp@bookeeponon.com
+                <Br />
+                사업자등록번호 : 000-00-00000 통신판매업신고 : 제 0000-00000호
+                <Br />
+                호스팅 서비스사업자 : (주)북킵온앤온
+                <Br />
+                Copyright ⓒ bookeeponon Crop. All Rights Reserved.
+              </CompanyInfoDetails>
+            </CompanyInfo>
+          </Right>
         </Bottom>
       </Section>
     </Base>
