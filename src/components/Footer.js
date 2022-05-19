@@ -1,3 +1,4 @@
+import GreyLogoImgFile from "../assets/grey_logo.png";
 import React from "react";
 import styled from "styled-components";
 
@@ -88,7 +89,9 @@ const CompanyTitle = styled.div`
   padding-right: 40px;
 `;
 
-const CompanyTitleLogo = styled.img`
+const CompanyTitleLogo = styled.img.attrs({
+  src: `${GreyLogoImgFile}`,
+})`
   width: 90%;
 `;
 
@@ -144,10 +147,7 @@ function Footer() {
         <Bottom>
           <Left>
             <CompanyTitle>
-              <CompanyTitleLogo
-                src="/img/grey_logo.png"
-                alt="grey_logo"
-              ></CompanyTitleLogo>
+              <CompanyTitleLogo />
               <Br />
               <CompanyTitleText>새로운 인터넷 서점</CompanyTitleText>
             </CompanyTitle>
