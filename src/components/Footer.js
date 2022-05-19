@@ -3,16 +3,17 @@ import React from "react";
 import styled from "styled-components";
 
 const Base = styled.footer`
+  width: 100%;
   display: block;
   box-sizing: border-box;
-  width: 100%;
 `;
 
 const Section = styled.section`
-  background-color: #f2f2f2;
+  background-color: pink;
 `;
 
 const Empty = styled.section`
+  background-color: blue;
   height: 40px;
 `;
 

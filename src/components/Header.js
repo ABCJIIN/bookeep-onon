@@ -7,7 +7,7 @@ const Base = styled.header`
   width: 100%;
   margin: 0 auto;
   height: 300px;
-  background-color: #f2f2f2;
+  background-color: #af4;
   text-align: center;
 `;
 
