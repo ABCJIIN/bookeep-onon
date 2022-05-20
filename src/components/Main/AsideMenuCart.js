@@ -12,11 +12,13 @@ const Section = styled.section`
   height: 100%;
   background-color: #f2f;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const CartContainer = styled.div`
-  width: 80%;
+  width: 300px;
+  height: 300px;
   background: red;
   display: flex;
   justify-content: center;

@@ -23,7 +23,7 @@ const NavMenuList = styled.div`
 const NavContainer = styled.ul`
   list-style: none;
   padding: 0;
-  margin 30px 0 30px 50px;
+  margin: 30px 0 30px 50px;
 `;
 
 const NavWrapper = styled.li`

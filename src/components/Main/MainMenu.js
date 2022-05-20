@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Base = styled.main`
   width: 60%;
   margin: 0 auto;
-  height: 420px;
+  height: 1200px;
   background-color: orange;
   text-align: center;
 `;

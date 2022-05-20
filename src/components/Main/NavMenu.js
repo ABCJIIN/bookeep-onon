@@ -6,7 +6,7 @@ const Base = styled.nav`
   width: 20%;
   float: left;
   margin: 0 auto;
-  height: 420px;
+  height: 1200px;
   background-color: green;
 `;
 
