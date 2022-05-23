@@ -30,14 +30,12 @@ const NavWrapper = styled.li`
   font-size: 20px;
   font-weight: 600;
   position: relative;
-  padding: 30px 0 30px 20px;
+  padding: 30px 0 30px 0;
   margin: 40px auto;
-  text-align: center;
   width: 60%;
   box-sizing: border-box;
   border-radius: 50px;
-  /* background-size: 0; */
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-property: width, background-color;
 
   .icon {
@@ -48,8 +46,8 @@ const NavWrapper = styled.li`
 
   &:hover {
     background-color: #acdcff;
-    width: 100%;
-    text-align: center;
+    width: 90%;
+    padding-left: 30px;
   }
 `;
 
