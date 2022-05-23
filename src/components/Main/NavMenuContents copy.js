@@ -30,15 +30,11 @@ const NavWrapper = styled.li`
   font-size: 20px;
   font-weight: 600;
   position: relative;
-  padding: 30px 0 30px 20px;
+  padding: 20px 0 20px 20px;
   margin: 40px auto;
-  text-align: center;
-  width: 60%;
+  width: 80%;
   box-sizing: border-box;
   border-radius: 50px;
-  /* background-size: 0; */
-  transition-duration: 1s;
-  transition-property: width, background-color;
 
   .icon {
     width: 28px;
@@ -46,10 +42,23 @@ const NavWrapper = styled.li`
     position: absolute;
   }
 
-  &:hover {
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
     background-color: #acdcff;
+    position: absolute;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  &:hover:after {
     width: 100%;
-    text-align: center;
+    left: 0;
   }
 `;
 

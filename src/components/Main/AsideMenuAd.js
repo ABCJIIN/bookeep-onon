@@ -14,23 +14,28 @@ const Base = styled.aside`
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 `;
 
 const AdContainer = styled.div`
-  width: 300px;
-  height: 450px;
-  background: red;
+  width: 80%;
+  height: 500px;
+  /* background: red; */
+  background-color: #ffffff;
 `;
 
 const AdTitle = styled.div`
   width: 100%;
-  height: 50px;
+  height: 30px;
+  line-height: 30px;
   font-size: 18px;
+  font-weight: 600;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
 
   .icon {
     width: 22px;
@@ -41,6 +46,7 @@ const AdTitle = styled.div`
 
 const AdPageContainer = styled.ul`
   list-style: none;
+  width: 100%;
   padding: 0;
   margin: 0;
 `;
@@ -51,20 +57,31 @@ const AdPageWrapper = styled.li`
 `;
 
 const YesLogo = styled.img`
-  width: 80%;
+  width: 50%;
+  margin: 15px auto;
 `;
+const YesLink = styled.a``;
 
 const AladinLogo = styled.img`
-  width: 65%;
+  width: 50%;
+  margin: 15px auto;
 `;
+
+const AladinLink = styled.a``;
 
 const KyoboLogo = styled.img`
-  width: 50%;
+  width: 40%;
+  margin: 15px auto;
 `;
 
+const KyoboLink = styled.a``;
+
 const MillieLogo = styled.img`
-  width: 60%;
+  width: 45%;
+  margin: 15px auto;
 `;
+
+const MillieLink = styled.a``;
 
 function AsideMenuAd() {
   return (
@@ -77,16 +94,40 @@ function AsideMenuAd() {
           </AdTitle>
           <AdPageContainer>
             <AdPageWrapper>
-              <YesLogo src={YesLogoSrc} />
+              <YesLink
+                href="http://www.yes24.com/main/default.aspx"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <YesLogo src={YesLogoSrc} />
+              </YesLink>
             </AdPageWrapper>
             <AdPageWrapper>
-              <AladinLogo src={AladinLogoSrc} />
+              <AladinLink
+                href="https://www.aladin.co.kr/home/welcome.aspx"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AladinLogo src={AladinLogoSrc} />
+              </AladinLink>
             </AdPageWrapper>
             <AdPageWrapper>
-              <KyoboLogo src={KyoboLogoSrc} />
+              <KyoboLink
+                href="http://www.kyobobook.co.kr/index.laf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <KyoboLogo src={KyoboLogoSrc} />
+              </KyoboLink>
             </AdPageWrapper>
             <AdPageWrapper>
-              <MillieLogo src={MillieLogoSrc} />
+              <MillieLink
+                href="https://www.millie.co.kr/v3/brand/update#intro"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <MillieLogo src={MillieLogoSrc} />
+              </MillieLink>
             </AdPageWrapper>
           </AdPageContainer>
         </AdContainer>

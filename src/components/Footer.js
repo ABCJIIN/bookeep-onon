@@ -6,14 +6,15 @@ const Base = styled.footer`
   width: 100%;
   display: block;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 `;
 
 const Section = styled.section`
-  background-color: pink;
+  /* background-color: pink; */
 `;
 
 const Empty = styled.section`
-  background-color: blue;
+  /* background-color: blue; */
   height: 40px;
 `;
 

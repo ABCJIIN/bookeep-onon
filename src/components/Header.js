@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import LogoImgFile from "../assets/logo.png";
 import React from "react";
@@ -7,7 +8,8 @@ const Base = styled.header`
   width: 100%;
   margin: 0 auto;
   height: 300px;
-  background-color: #af4;
+  /* background-color: #af4; */
+  background-color: #f2f2f2;
   text-align: center;
 `;
 
@@ -27,8 +29,6 @@ const Logo = styled.div`
   align-items: center;
   margin-top: 10px;
 `;
-
-const LogoLink = styled.a``;
 
 const LogoImg = styled.img.attrs({
   src: `${LogoImgFile}`,
@@ -73,9 +73,9 @@ function Header() {
       <Section>
         <HeaderWrapper>
           <Logo>
-            <LogoLink>
+            <Link to="/">
               <LogoImg />
-            </LogoLink>
+            </Link>
           </Logo>
           <SearchContainer>
             <SearchForm>

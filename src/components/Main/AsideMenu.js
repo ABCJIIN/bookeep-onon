@@ -7,8 +7,9 @@ const Base = styled.aside`
   width: 20%;
   float: right;
   margin: 0 auto;
-  height: 1200px;
-  background-color: yellow;
+  height: 1800px;
+  /* background-color: yellow; */
+  background-color: #f2f2f2;
 `;
 
 function AsideMenu() {

@@ -1,21 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import MainTodayBook from "./MainTodayBook";
+import MainMenuContents from "./MainMenuContents";
 
 const Base = styled.main`
   width: 60%;
   margin: 0 auto;
-  height: 1200px;
+  height: 1800px;
   background-color: orange;
   text-align: center;
 `;
-
-const Section = styled.section``;
 
 function MainMenu() {
   return (
     <>
       <Base>
-        <Section></Section>
+        <MainTodayBook />
+        <MainMenuContents />
       </Base>
     </>
   );

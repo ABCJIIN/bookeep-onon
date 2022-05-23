@@ -6,8 +6,9 @@ const Base = styled.nav`
   width: 20%;
   float: left;
   margin: 0 auto;
-  height: 1200px;
-  background-color: green;
+  height: 1800px;
+  /* background-color: green; */
+  background-color: #f2f2f2;
 `;
 
 function NavMenu() {

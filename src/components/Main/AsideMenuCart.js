@@ -10,16 +10,17 @@ const Base = styled.aside`
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  background-color: #f2f;
+  /* background-color: #f2f; */
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const CartContainer = styled.div`
-  width: 300px;
+  width: 80%;
   height: 300px;
-  background: red;
+  /* background: red; */
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
