@@ -1,7 +1,7 @@
-import YesLogoSrc from "../../assets/yes24.png";
-import AladinLogoSrc from "../../assets/aladin.png";
-import KyoboLogoSrc from "../../assets/kyobo.png";
-import MillieLogoSrc from "../../assets/millie.png";
+import YesLogoSrc from "../assets/yes24.png";
+import AladinLogoSrc from "../assets/aladin.png";
+import KyoboLogoSrc from "../assets/kyobo.png";
+import MillieLogoSrc from "../assets/millie.png";
 import { FaDoorOpen } from "react-icons/fa";
 import React from "react";
 import styled from "styled-components";

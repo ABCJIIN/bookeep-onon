@@ -2,55 +2,61 @@ import React from "react";
 import styled from "styled-components";
 
 const Base = styled.main`
-  width: 100%;
-  height: 20%;
+  width: 60%;
+  margin: 0 auto;
+  height: 400px;
   background-color: #ffffff;
 `;
 
 const Section = styled.section`
   width: 100%;
-  height: 100%;
-  /* background-color: aqua; */
+  height: 400px;
+  display: flex;
 `;
 
-const TodayBookContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  /* display: flex;
-  align-items: center; */
-  display: flex;
-  align-items: center;
+const TodayBooksContainer = styled.div`
+  display: inline-block;
+  width: 30%;
+  height: 400px;
 `;
 
 const TodayBookMain = styled.div`
-  width: 30%;
-  height: 90%;
+  display: inline-block;
+  width: 280px;
+  height: 350px;
   background-color: brown;
-  margin: auto 20px;
+  margin-top: 25px;
+  margin-left: 25px;
+`;
+
+const BookDetail = styled.div`
+  width: 70%;
+  height: 400px;
 `;
 
 const TodayBookTitle = styled.h1`
-  display: inline-block;
-  margin: 0 auto;
+  font-size: 30px;
 `;
 
 const TodayBookMainDetail = styled.div``;
 
 const TodayBookContents = styled.div``;
 
-function MainTodayBook() {
+function TodayBookContainer() {
   return (
     <Base>
       <Section>
-        <TodayBookContainer>
+        <TodayBooksContainer>
           <TodayBookMain></TodayBookMain>
+        </TodayBooksContainer>
+        <BookDetail>
           <TodayBookTitle>오늘의 책</TodayBookTitle>
           <TodayBookMainDetail></TodayBookMainDetail>
           <TodayBookContents></TodayBookContents>
-        </TodayBookContainer>
+        </BookDetail>
       </Section>
     </Base>
   );
 }
 
-export default MainTodayBook;
+export default TodayBookContainer;

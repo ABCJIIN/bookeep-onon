@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BackImg from "../../assets/add_cart.png";
+import BackImg from "../assets/add_cart.png";
 
 const Base = styled.aside`
   width: 100%;

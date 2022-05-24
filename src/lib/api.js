@@ -1,8 +1,7 @@
 import axiosInstance from "./axiosInstance";
 
-export const getBestseller = () => axiosInstance.get("/allbooks/Bestseller");
+export const getBestseller = () => axiosInstance.get("/Bestseller");
 
-export const getItemNewAll = () => axiosInstance.get("/allbooks/ItemNewAll");
+export const getItemNewAll = () => axiosInstance.get("/ItemNewAll");
 
-export const getItemNewSpecial = () =>
-  axiosInstance.get("/allbooks/ItemNewSpecial");
+export const getItemNewSpecial = () => axiosInstance.get("/ItemNewSpecial");

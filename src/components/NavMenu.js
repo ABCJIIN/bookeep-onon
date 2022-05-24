@@ -4,8 +4,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Base = styled.nav`
-  width: 100%;
-  height: 100%;
+  width: 20%;
+  float: left;
+  margin: 0 auto;
+  height: 1800px;
+  /* background-color: green; */
+  background-color: #f2f2f2;
 `;
 
 const Section = styled.section`
@@ -30,11 +34,13 @@ const NavWrapper = styled.li`
   font-size: 20px;
   font-weight: 600;
   position: relative;
-  padding: 20px 0 20px 20px;
+  padding: 30px 0 30px 0;
   margin: 40px auto;
-  width: 80%;
+  width: 60%;
   box-sizing: border-box;
   border-radius: 50px;
+  transition-duration: 0.5s;
+  transition-property: width, background-color;
 
   .icon {
     width: 28px;
@@ -42,27 +48,14 @@ const NavWrapper = styled.li`
     position: absolute;
   }
 
-  &:after {
-    background: none repeat scroll 0 0 transparent;
-    content: "";
+  &:hover {
     background-color: #acdcff;
-    position: absolute;
-    width: 80%;
-    box-sizing: border-box;
-    border-radius: 50px;
-    width: 0;
-    height: 100%;
-    left: 50%;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  }
-
-  &:hover:after {
-    width: 100%;
-    left: 0;
+    width: 90%;
+    padding-left: 30px;
   }
 `;
 
-function NavMenuContents() {
+function NavMenu() {
   return (
     <Base>
       <Section>
@@ -93,4 +86,4 @@ function NavMenuContents() {
   );
 }
 
-export default NavMenuContents;
+export default NavMenu;
