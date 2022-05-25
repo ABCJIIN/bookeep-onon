@@ -1,6 +1,7 @@
 import { FaSearch } from "react-icons/fa";
 import React from "react";
 import styled from "styled-components";
+// import Test from "./Test";
 
 const Base = styled.main`
   width: 100%;
@@ -66,6 +67,7 @@ function AllBookContainer() {
             <FaSearch className="icon" />
           </SearchForm>
         </SearchContainer>
+        {/* <Test /> */}
       </Section>
     </Base>
   );

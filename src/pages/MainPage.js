@@ -5,8 +5,8 @@ import styled from "styled-components";
 
 import NavMenu from "../components/NavMenu";
 import AsideMenu from "../components/AsideMenu";
-import TodayBookContainer from "../containers/TodayBookContainer";
-import AllBookContainer from "../containers/AllBookContainer";
+import TodayBook from "../components/TodayBook";
+import AllBook from "../components/AllBook";
 
 const Main = styled.main`
   /* margin: 0 auto; */
@@ -19,8 +19,8 @@ function MainPage() {
       <Main>
         <NavMenu />
         <AsideMenu />
-        <TodayBookContainer />
-        <AllBookContainer />
+        <TodayBook />
+        <AllBook />
       </Main>
       <Footer />
     </>
