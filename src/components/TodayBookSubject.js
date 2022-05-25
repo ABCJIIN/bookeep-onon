@@ -1,4 +1,4 @@
-const bookDetail = [
+export const bookDetail = [
   {
     id: 0,
     title: "미세먼지",

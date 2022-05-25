@@ -4,6 +4,7 @@ import CaptainHoneySrc from "../assets/captainhoney.png";
 import CocktailSrc from "../assets/cocktail.png";
 import FridaySrc from "../assets/friday.png";
 import PunchSrc from "../assets/punch.png";
+// import { bookDetail } from "./TodayBookSubject";
 
 import React from "react";
 import styled from "styled-components";
@@ -115,7 +116,9 @@ function TodayBook() {
           <BookPosterContainer>
             <BookPosters>
               <BookPosterWrapper>
-                <FineDust src={FineDustSrc} />
+                <a href="/">
+                  <FineDust src={FineDustSrc} />
+                </a>
               </BookPosterWrapper>
               <BookPosterWrapper>
                 <Scissors src={ScissorsSrc} />
