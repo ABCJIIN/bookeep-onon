@@ -6,7 +6,7 @@ import styled from "styled-components";
 import NavMenu from "../components/NavMenu";
 import AsideMenu from "../components/AsideMenu";
 import TodayBook from "../components/TodayBook";
-import AllBook from "../components/AllBook";
+// import AllBook from "../components/AllBook";
 
 const Main = styled.main`
   /* margin: 0 auto; */
@@ -20,7 +20,7 @@ function MainPage() {
         <NavMenu />
         <AsideMenu />
         <TodayBook />
-        <AllBook />
+        {/* <AllBook /> */}
       </Main>
       <Footer />
     </>

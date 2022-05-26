@@ -1,3 +1,10 @@
+// import FineDustSrc from "../assets/finedust.png";
+// import ScissorsSrc from "../assets/scissors.png";
+// import CaptainHoneySrc from "../assets/captainhoney.png";
+// import CocktailSrc from "../assets/cocktail.png";
+// import FridaySrc from "../assets/friday.png";
+// import PunchSrc from "../assets/punch.png";
+
 import React from "react";
 import styled from "styled-components";
 
