@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Li = styled.li`
-  /* width: 50px; */
+  text-align: center;
 `;
 
 const Img = styled.img`
-  width: 100px;
+  width: 90%;
 `;
 
 const TodayBookItem = ({ item, onView }) => {

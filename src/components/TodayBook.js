@@ -6,27 +6,34 @@ import styled from "styled-components";
 
 const Base = styled.main`
   width: 60%;
+  height: 100%;
   margin: 0 auto;
-  height: 450px;
   background-color: #ffffff;
 `;
 
 const Section = styled.section`
   width: 100%;
-  height: 450px;
   display: flex;
 `;
 
 const Wrap = styled.div`
   width: 100%;
-  height: 100%;
+  /* background-color: brown; */
 `;
 
 const TodayBookListWrapper = styled.div`
   width: 30%;
-  height: 450px;
-  background-color: brown;
   float: left;
+`;
+
+const TodayBookViewWrapper = styled.div`
+  width: 70%;
+  float: right;
+  /* background-color: orange; */
+  max-height: 500px;
+  /* position: relative; */
+  vertical-align: bottom;
+  overflow: hidden;
 `;
 
 const TodayBook = () => {
@@ -44,7 +51,9 @@ const TodayBook = () => {
           <TodayBookListWrapper>
             <TodayBookList datas={datas} onView={onView} currItem={currItem} />
           </TodayBookListWrapper>
-          <TodayBookView currItem={currItem} />
+          <TodayBookViewWrapper>
+            <TodayBookView currItem={currItem} />
+          </TodayBookViewWrapper>
         </Wrap>
       </Section>
     </Base>
