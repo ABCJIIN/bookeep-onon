@@ -9,6 +9,7 @@ const Base = styled.header`
   height: 250px;
   /* background-color: #af4; */
   background-color: #f2f2f2;
+  /* background-color: #111111; */
   text-align: center;
 `;
 

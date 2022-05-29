@@ -5,32 +5,40 @@ const Article = styled.article`
   width: 100%;
   float: right;
   height: 100%;
+  /* background-color: #61451c; */
 `;
 
 const H1 = styled.h1`
-  margin-left: 10px;
+  margin-left: 20px;
   font-size: 25px;
 `;
 
 const H4 = styled.h4`
   font-size: 18px;
-  margin: 0 12px;
+  margin: 0 20px;
 `;
 
 const Author = styled.p`
-  font-size: 12px;
-  margin-left: 12px;
+  font-size: 14px;
+  margin-left: 20px;
 `;
 
 const Price = styled.p`
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
-  margin-left: 12px;
+  margin-left: 20px;
 `;
 
-const About = styled.p`
-  font-size: 13px;
-  margin: auto 12px;
+const About = styled.div`
+  /* width: 100%; */
+  font-size: 14px;
+  /* margin: auto 12px; */
+  margin-left: 20px;
+  margin-right: 40px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
 `;
 
 const TodayBookView = ({ currItem }) => {

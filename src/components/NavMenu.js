@@ -7,7 +7,7 @@ const Base = styled.nav`
   width: 20%;
   float: left;
   margin: 0 auto;
-  height: 1800px;
+  height: 1200px;
   /* background-color: green; */
   background-color: #f2f2f2;
 `;
@@ -31,7 +31,7 @@ const NavContainer = styled.ul`
 `;
 
 const NavWrapper = styled.li`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   position: relative;
   padding: 30px 0 30px 0;

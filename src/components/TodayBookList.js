@@ -9,26 +9,25 @@ const Article = styled.article`
 
 const ImgWrapper = styled.div`
   width: 100%;
-  background-color: pink;
+  /* background-color: pink; */
+  /* background-color: #383838; */
   text-align: center;
 `;
 
 const Img = styled.img`
   margin: 10px auto;
-  width: 90%;
+  width: 80%;
 `;
 
 const UlWrapper = styled.div`
   background-color: #ffffff;
-
-  /* background-color: yellow; */
   width: 330%;
   position: relative;
   margin-left: 5px;
 `;
 
 const Ul = styled.ul`
-  margin: 0;
+  margin: 20px auto;
   padding: 0;
   list-style: none;
   display: flex;

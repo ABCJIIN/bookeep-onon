@@ -31,7 +31,7 @@ const AdTitle = styled.div`
   width: 100%;
   height: 30px;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
   margin-top: 30px;

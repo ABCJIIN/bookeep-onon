@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TodayBookList from "./TodayBookList";
 import TodayBookView from "./TodayBookView";
+// import TodayBookItem from "./TodayBookItem"
 import data from "../assets/api/images";
 import styled from "styled-components";
 
@@ -30,10 +31,11 @@ const TodayBookViewWrapper = styled.div`
   width: 70%;
   float: right;
   /* background-color: orange; */
-  max-height: 500px;
+  height: 380px;
   /* position: relative; */
   vertical-align: bottom;
-  overflow: hidden;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 `;
 
 const TodayBook = () => {
