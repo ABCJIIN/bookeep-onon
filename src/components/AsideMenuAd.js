@@ -8,7 +8,6 @@ import styled from "styled-components";
 
 const Base = styled.aside`
   width: 100%;
-  /* height: 50%; */
 `;
 
 const Section = styled.section`
@@ -24,7 +23,7 @@ const AdContainer = styled.div`
   height: 500px;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 20px 10px 10px #f2f2f2;
+  box-shadow: 15px 10px 10px #cccccc;
 `;
 
 const AdTitle = styled.div`
@@ -59,12 +58,19 @@ const AdPageWrapper = styled.li`
 const YesLogo = styled.img`
   width: 50%;
   margin: 15px auto;
+  opacity: 100%;
+  &:hover {
+    opacity: 70%;
+  }
 `;
 const YesLink = styled.a``;
 
 const AladinLogo = styled.img`
   width: 50%;
   margin: 15px auto;
+  &:hover {
+    opacity: 70%;
+  }
 `;
 
 const AladinLink = styled.a``;
@@ -72,6 +78,9 @@ const AladinLink = styled.a``;
 const KyoboLogo = styled.img`
   width: 40%;
   margin: 15px auto;
+  &:hover {
+    opacity: 70%;
+  }
 `;
 
 const KyoboLink = styled.a``;
@@ -79,6 +88,9 @@ const KyoboLink = styled.a``;
 const MillieLogo = styled.img`
   width: 45%;
   margin: 15px auto;
+  &:hover {
+    opacity: 70%;
+  }
 `;
 
 const MillieLink = styled.a``;

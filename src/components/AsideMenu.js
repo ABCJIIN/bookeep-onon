@@ -8,7 +8,6 @@ const Base = styled.aside`
   right: 0;
   width: 20%;
   height: 100%;
-  /* background-color: #f2f2f2; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,8 +16,8 @@ const Base = styled.aside`
 function AsideMenu() {
   return (
     <Base>
-      <AsideMenuAd />
       <Order />
+      <AsideMenuAd />
     </Base>
   );
 }

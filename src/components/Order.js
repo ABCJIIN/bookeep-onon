@@ -34,33 +34,32 @@ const Order = () => {
     <>
       <OrderWrapper>
         <NewTitle>장바구니</NewTitle>
-        {orders.map((order) => {
+        {orders.map((order, index) => {
           const { isbn } = order;
           const book = books.find((b) => b.isbn === isbn);
           const click = () => {
             remove(isbn);
           };
           return (
-            <>
-              <div className="item" key={isbn}>
-                <div className="bookImg">
-                  <img src={book.thumbnail} alt={book.thumbnail} />
-                </div>
-                <div className="content">
-                  <p className="bookTitle">
-                    {book.title} {order.quantity}
-                  </p>
-                  <p className="bookPrice">
-                    &#8361; {book.sale_price * order.quantity}
-                  </p>
-                </div>
-                <div className="icon">
-                  <img src={CancelImg} alt="cancel" onClick={click} />
-                </div>
+            <div className="item" key={index}>
+              <div className="bookImg">
+                <img src={book.thumbnail} alt={book.thumbnail} />
               </div>
-            </>
+              <div className="content">
+                <p className="bookTitle">
+                  {book.title} {order.quantity}
+                </p>
+                <p className="bookPrice">
+                  &#8361; {book.sale_price * order.quantity}
+                </p>
+              </div>
+              <div className="icon">
+                <img src={CancelImg} alt="cancel" onClick={click} />
+              </div>
+            </div>
           );
         })}
+
         <div>
           <hr />
           <div className="totalItem">
@@ -79,13 +78,11 @@ const Order = () => {
 };
 
 const OrderWrapper = styled.aside`
-  /* height: 50%; */
   width: 80%;
   margin: 0 auto;
-  min-height: 150px;
-  /* background-color: #ffffff; */
+  min-height: 250px;
   border-radius: 10px;
-  box-shadow: 20px 10px 10px #f2f2f2;
+  box-shadow: 15px 10px 10px #cccccc;
   overflow: hidden;
 
   h1 {
@@ -93,7 +90,6 @@ const OrderWrapper = styled.aside`
   }
   .item {
     display: flex;
-    /* border: solid 1px; */
   }
   .bookImg {
     img {
@@ -167,7 +163,7 @@ const BackgroundImg = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0;
+    top: 30%;
     left: 0;
     opacity: 20%;
   }
@@ -178,7 +174,7 @@ const Title = styled.div`
   font-weight: 800;
   text-align: center;
   position: absolute;
-  top: 20px;
+  top: 70px;
 `;
 
 const NewTitle = styled.div`
@@ -193,8 +189,8 @@ const SubTitle = styled.div`
   font-size: 16px;
   font-weight: 600;
   position: absolute;
-  bottom: 20px;
-  left: 15px;
+  bottom: -10px;
+  left: 18px;
 `;
 
 export default Order;

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import useBooks from "../hooks/useBooks";
 import useActions from "../hooks/useActions";
 import CartImg from "../assets/add-in-shopping-cart.png";
-import AddImg from "../assets/zoom-in-button.png";
 
 const BookList = () => {
   const { books } = useBooks();
@@ -47,7 +46,6 @@ const BookList = () => {
                   alt="cart"
                   onClick={click}
                 />
-                {/* <a href={url} target="_blank" rel="noreferrer"></a> */}
               </div>
             </div>
           </BookItem>
@@ -63,13 +61,14 @@ const BookListWrapper = styled.li`
   margin: auto;
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
-  /* background-color: aqua; */
 `;
 const BookItem = styled.dl`
   position: relative;
   width: 100%;
   cursor: pointer;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 15px 15px 12px #666666;
   .bookImg {
     img {
       width: 100%;

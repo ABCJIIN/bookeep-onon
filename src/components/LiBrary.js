@@ -8,13 +8,12 @@ const LiBrary = () => {
   const { searchBook } = useBooks();
   const [text, setText] = useState("");
 
-  // 엔터를 눌렀을 때 호출되는 함수
   const onEnter = (e) => {
     if (e.keyCode === 13) {
       searchBook(text);
     }
   };
-  // text 검색어가 바뀔 때 호출되는 함수
+
   const onTextUpdate = (e) => {
     setText(e.target.value);
   };
@@ -24,12 +23,12 @@ const LiBrary = () => {
       <h1 className="title">LIBRARY</h1>
       <div className="searchBox">
         <input
-          type="search"
+          type="text"
           placeholder="검색어를 입력해 주세요."
           name="query"
-          onKeyDown={onEnter} // enter
-          onChange={onTextUpdate} // change
-          value={text} // view
+          onKeyDown={onEnter}
+          onChange={onTextUpdate}
+          value={text}
           className="input_search"
         />
         <FaSearch className="icon" />
@@ -49,6 +48,7 @@ const LiBraryWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    margin-top: 0;
   }
   .books {
     display: flex;
@@ -81,7 +81,6 @@ const LiBraryWrapper = styled.div`
 const BookListWrapper = styled.ul`
   margin: 0 auto;
   padding: 0;
-  /* background-color: #ffffff; */
   width: 100%;
 `;
 

@@ -7,7 +7,6 @@ const Base = styled.nav`
   position: absolute;
   width: 20%;
   height: 100%;
-  /* background-color: #f2f2f2; */
 `;
 
 const Section = styled.section`
@@ -22,7 +21,7 @@ const NavMenuList = styled.div`
   height: 100%;
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 20px 10px 10px #f2f2f2;
+  box-shadow: 15px 10px 10px #cccccc;
 `;
 
 const NavContainer = styled.ul`
@@ -63,19 +62,16 @@ function NavMenu() {
           <NavContainer>
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               <NavWrapper>
-                베스트셀러
+                오늘의 책
                 <FaAngleRight className="icon" />
               </NavWrapper>
             </Link>
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Link
+              to="/library"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <NavWrapper>
-                신간 전체
-                <FaAngleRight className="icon" />
-              </NavWrapper>
-            </Link>
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-              <NavWrapper>
-                주목할 만한 신간
+                도서검색
                 <FaAngleRight className="icon" />
               </NavWrapper>
             </Link>

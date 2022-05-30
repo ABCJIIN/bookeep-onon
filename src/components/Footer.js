@@ -1,4 +1,4 @@
-import GreyLogoImgFile from "../assets/grey_logo.png";
+import GreyLogoImgFile from "../assets/logo.png";
 import React from "react";
 import styled from "styled-components";
 
@@ -6,7 +6,6 @@ const Base = styled.footer`
   width: 100%;
   display: block;
   box-sizing: border-box;
-  /* background-color: #f2f2f2; */
   background-color: #ffffff;
 `;
 
@@ -65,13 +64,11 @@ const TopUnderHr = styled.hr`
   width: 26.5%;
 `;
 
-const Bottom = styled.section`
-  height: 220px;
-`;
+const Bottom = styled.section``;
 
 const Left = styled.section`
   width: 50%;
-  height: 200px;
+  height: 180px;
   float: left;
   display: flex;
   justify-content: right;
@@ -79,52 +76,54 @@ const Left = styled.section`
   &:after {
     content: "";
     border-right: dashed 2px #e3e3e3;
-    height: 150px;
+    height: 130px;
+    margin-bottom: 20px;
   }
 `;
 
 const CompanyTitle = styled.div`
-  height: 160px;
-  text-align: center;
+  height: 140px;
+  text-align: right;
   padding-right: 40px;
 `;
 
 const CompanyTitleLogo = styled.img.attrs({
   src: `${GreyLogoImgFile}`,
 })`
-  width: 90%;
+  width: 50%;
+  opacity: 40%;
 `;
 
 const Br = styled.br``;
 
 const CompanyTitleText = styled.div`
   color: #a9a9a9;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 10px;
 `;
 
 const Right = styled.section`
   width: 50%;
-  height: 200px;
+  height: 180px;
   float: right;
   display: flex;
   justify-content: left;
-  align-items: center;
 `;
 
 const CompanyInfo = styled.div`
   padding-left: 40px;
+  padding-top: 20px;
 `;
 
 const CompanyInfoName = styled.div`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #a9a9a9;
   padding-bottom: 10px;
 `;
 
 const CompanyInfoDetails = styled.div`
-  font-size: 14px;
+  font-size: 12px;
   color: #a9a9a9;
 `;
 

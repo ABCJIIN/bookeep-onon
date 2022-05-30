@@ -1,20 +1,26 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AppStateProvider from "./providers/AppStateProvider";
 import MainPage from "./pages/MainPage";
 import LibraryPage from "./pages/LibraryPage";
+import styled from "styled-components";
+
+const H2 = styled.h2`
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+`;
 
 function App() {
   return (
     <>
       <AppStateProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/library" element={<LibraryPage />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/library" element={<LibraryPage />} />
+          <Route path="/*" element={<H2>not found</H2>} />
+        </Routes>
       </AppStateProvider>
     </>
   );

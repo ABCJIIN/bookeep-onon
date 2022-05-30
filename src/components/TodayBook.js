@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TodayBookList from "./TodayBookList";
 import TodayBookView from "./TodayBookView";
-// import TodayBookItem from "./TodayBookItem"
 import data from "../assets/api/images";
 import styled from "styled-components";
 
@@ -11,7 +10,7 @@ const Base = styled.main`
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 20px 10px 10px #f2f2f2;
+  box-shadow: 15px 10px 10px #cccccc;
 `;
 
 const Section = styled.section`

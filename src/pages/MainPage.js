@@ -4,9 +4,8 @@ import Footer from "../components/Footer";
 import styled from "styled-components";
 
 import NavMenu from "../components/NavMenu";
-import AsideMenu from "../components/AsideMenu";
+import AsideMenuAd from "../components/AsideMenuAd";
 import TodayBook from "../components/TodayBook";
-import AllBook from "../components/AllBook";
 
 const Main = styled.main`
   position: relative;
@@ -15,15 +14,24 @@ const Main = styled.main`
   height: 100%;
 `;
 
+const AsideMenuAdWrapper = styled.aside`
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  display: flex;
+`;
+
 function MainPage() {
   return (
     <>
       <Header />
       <Main>
         <NavMenu />
-        <AsideMenu />
+        <AsideMenuAdWrapper>
+          <AsideMenuAd />
+        </AsideMenuAdWrapper>
         <TodayBook />
-        <AllBook />
       </Main>
       <Footer />
     </>
