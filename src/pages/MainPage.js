@@ -9,9 +9,10 @@ import TodayBook from "../components/TodayBook";
 import AllBook from "../components/AllBook";
 
 const Main = styled.main`
+  position: relative;
   margin: 0 auto;
   width: 100%;
-  /* height: 1200px; */
+  height: 100%;
 `;
 
 function MainPage() {

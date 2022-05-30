@@ -10,6 +10,8 @@ const Base = styled.main`
   height: 100%;
   margin: 0 auto;
   background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 20px 10px 10px #f2f2f2;
 `;
 
 const Section = styled.section`
@@ -19,7 +21,6 @@ const Section = styled.section`
 
 const Wrap = styled.div`
   width: 100%;
-  /* background-color: brown; */
 `;
 
 const TodayBookListWrapper = styled.div`
@@ -30,12 +31,8 @@ const TodayBookListWrapper = styled.div`
 const TodayBookViewWrapper = styled.div`
   width: 70%;
   float: right;
-  /* background-color: orange; */
   height: 380px;
-  /* position: relative; */
   vertical-align: bottom;
-  /* overflow: hidden;
-  text-overflow: ellipsis; */
 `;
 
 const TodayBook = () => {

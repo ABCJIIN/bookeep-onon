@@ -4,25 +4,25 @@ import React from "react";
 import styled from "styled-components";
 
 const Base = styled.nav`
+  position: absolute;
   width: 20%;
-  float: left;
-  margin: 0 auto;
-  height: 1200px;
-  /* background-color: green; */
-  background-color: #f2f2f2;
+  height: 100%;
+  /* background-color: #f2f2f2; */
 `;
 
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  /* background-color: tomato; */
   display: flex;
   justify-content: center;
 `;
 
 const NavMenuList = styled.div`
   width: 80%;
+  height: 100%;
   background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 20px 10px 10px #f2f2f2;
 `;
 
 const NavContainer = styled.ul`

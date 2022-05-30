@@ -8,13 +8,12 @@ import styled from "styled-components";
 
 const Base = styled.aside`
   width: 100%;
-  height: 50%;
+  /* height: 50%; */
 `;
 
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  /* background-color: skyblue; */
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -23,8 +22,9 @@ const Section = styled.section`
 const AdContainer = styled.div`
   width: 80%;
   height: 500px;
-  /* background: red; */
   background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 20px 10px 10px #f2f2f2;
 `;
 
 const AdTitle = styled.div`

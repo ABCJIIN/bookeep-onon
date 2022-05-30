@@ -34,9 +34,9 @@ const LiBrary = () => {
         />
         <FaSearch className="icon" />
       </div>
-      <ul>
+      <BookListWrapper>
         <BookList />
-      </ul>
+      </BookListWrapper>
     </LiBraryWrapper>
   );
 };
@@ -48,7 +48,7 @@ const LiBraryWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 40px;
   }
   .books {
     display: flex;
@@ -59,7 +59,8 @@ const LiBraryWrapper = styled.div`
     text-align: center;
   }
   .input_search {
-    width: 50%;
+    margin-bottom: 30px;
+    width: 80%;
     height: 40px;
     border-style: solid;
     border-width: 1px;
@@ -75,6 +76,13 @@ const LiBraryWrapper = styled.div`
     left: -40px;
     top: 2px;
   }
+`;
+
+const BookListWrapper = styled.ul`
+  margin: 0 auto;
+  padding: 0;
+  /* background-color: #ffffff; */
+  width: 100%;
 `;
 
 export default LiBrary;

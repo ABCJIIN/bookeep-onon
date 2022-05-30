@@ -5,7 +5,6 @@ const Article = styled.article`
   width: 100%;
   float: right;
   height: 100%;
-  /* background-color: #61451c; */
 `;
 
 const H1 = styled.h1`
@@ -30,9 +29,7 @@ const Price = styled.p`
 `;
 
 const About = styled.div`
-  /* width: 100%; */
   font-size: 14px;
-  /* margin: auto 12px; */
   margin-left: 20px;
   margin-right: 40px;
   display: -webkit-box;

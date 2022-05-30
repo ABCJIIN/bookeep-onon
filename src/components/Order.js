@@ -79,12 +79,15 @@ const Order = () => {
 };
 
 const OrderWrapper = styled.aside`
+  /* height: 50%; */
   width: 80%;
   margin: 0 auto;
   min-height: 150px;
-  /* background-color: orange; */
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  border-radius: 10px;
+  box-shadow: 20px 10px 10px #f2f2f2;
   overflow: hidden;
+
   h1 {
     text-align: center;
   }

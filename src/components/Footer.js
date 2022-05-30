@@ -6,28 +6,26 @@ const Base = styled.footer`
   width: 100%;
   display: block;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
+  background-color: #ffffff;
 `;
 
-const Section = styled.section`
-  /* background-color: pink; */
-`;
+const Section = styled.section``;
 
 const Empty = styled.section`
-  /* background-color: blue; */
-  height: 40px;
+  height: 20px;
 `;
 
 const EmptyUnderHr = styled.hr`
-  border: dashed 1px #a9a9a9;
+  border: dashed 1px #e3e3e3;
   text-align: center;
   width: 90%;
 `;
 
 const Top = styled.section`
   width: 100%;
-  height: 40px;
-  line-height: 40px;
+  height: 20px;
+  line-height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +40,8 @@ const TermsOfService = styled.ul`
 
 const TermsOfServiceItem = styled.li`
   display: inline-block;
-  color: #333333;
-  font-size: 16px;
+  color: #999999;
+  font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   vertical-align: top;
@@ -52,9 +50,9 @@ const TermsOfServiceItem = styled.li`
     &:after {
       content: "";
       display: inline-block;
-      background: #848485;
+      background: #d1d1d1;
       vertical-align: top;
-      width: 2px;
+      width: 1.8px;
       height: 16px;
       margin: 0 8px;
     }
@@ -62,7 +60,7 @@ const TermsOfServiceItem = styled.li`
 `;
 
 const TopUnderHr = styled.hr`
-  border: dashed 1px #a9a9a9;
+  border: dashed 1px #e3e3e3;
   text-align: center;
   width: 26.5%;
 `;
@@ -80,7 +78,7 @@ const Left = styled.section`
   align-items: center;
   &:after {
     content: "";
-    border-right: dashed 2px #a9a9a9;
+    border-right: dashed 2px #e3e3e3;
     height: 150px;
   }
 `;

@@ -4,44 +4,40 @@ import React from "react";
 import styled from "styled-components";
 
 const Base = styled.header`
+  position: relative;
   width: 100%;
-  margin: 0 auto;
-  height: 250px;
-  /* background-color: #af4; */
-  background-color: #f2f2f2;
-  /* background-color: #111111; */
-  text-align: center;
+  height: 200px;
+  background-color: #ffffff;
 `;
 
 const Section = styled.section`
   margin: 0 auto;
-  max-width: 1200px;
-  height: 100%;
+  width: 100%;
+  height: 55%;
+  box-shadow: 0px 3px 8px #f2f2f2;
 `;
 
 const HeaderWrapper = styled.div`
-  width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 20%;
+  height: 200px;
 `;
 
 const Logo = styled.div`
-  width: 100%;
-  height: 200px;
-  line-height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  left: 60px;
 `;
 
 const LogoImg = styled.img.attrs({
   src: `${LogoImgFile}`,
 })`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 120px;
+  opacity: 100%;
+
+  &:hover {
+    opacity: 70%;
+  }
 `;
 
 function Header() {

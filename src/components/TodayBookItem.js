@@ -6,15 +6,14 @@ const Li = styled.li`
 `;
 
 const Img = styled.img`
-  width: 90%;
-  transition-property: color;
-  transition-duration: 2s;
-  color: white;
+  width: 80%;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 40%;
   &:hover {
-    border: solid 10px;
-    color: #cecece;
-    transition-property: color;
-    transition-duration: 1s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    opacity: 100%;
   }
 `;
 

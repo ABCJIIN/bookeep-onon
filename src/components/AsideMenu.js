@@ -1,24 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-// import AsideMenuCart from "./AsideMenuCart";
 import Order from "./Order";
 import AsideMenuAd from "./AsideMenuAd";
 
 const Base = styled.aside`
+  position: absolute;
+  right: 0;
   width: 20%;
-  float: right;
-  margin: 0 auto;
-  height: 1200px;
-  /* background-color: yellow; */
-  background-color: #f2f2f2;
+  height: 100%;
+  /* background-color: #f2f2f2; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 function AsideMenu() {
   return (
     <Base>
-      {/* <AsideMenuCart /> */}
-      <Order />
       <AsideMenuAd />
+      <Order />
     </Base>
   );
 }

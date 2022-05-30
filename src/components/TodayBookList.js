@@ -9,14 +9,12 @@ const Article = styled.article`
 
 const ImgWrapper = styled.div`
   width: 100%;
-  /* background-color: pink; */
-  /* background-color: #383838; */
   text-align: center;
 `;
 
 const Img = styled.img`
   margin: 10px auto;
-  width: 80%;
+  width: 70%;
 `;
 
 const UlWrapper = styled.div`

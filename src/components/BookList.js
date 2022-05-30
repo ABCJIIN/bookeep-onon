@@ -59,8 +59,7 @@ const BookList = () => {
 
 const BookListWrapper = styled.li`
   display: grid;
-  width: 50%;
-  /* min-height: 40rem; */
+  width: 80%;
   margin: auto;
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
@@ -86,7 +85,7 @@ const BookItem = styled.dl`
     opacity: 0;
     visibility: visible;
     width: 100%;
-    background-color: #dddddd;
+    background-color: #ffffff;
   }
   &:hover {
     .bookImg {
