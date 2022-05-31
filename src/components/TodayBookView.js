@@ -5,6 +5,7 @@ const Article = styled.article`
   width: 100%;
   float: right;
   height: 100%;
+  margin-top: 40px;
 `;
 
 const H1 = styled.h1`
@@ -20,6 +21,7 @@ const H4 = styled.h4`
 const Author = styled.p`
   font-size: 14px;
   margin-left: 20px;
+  font-weight: 500;
 `;
 
 const Price = styled.p`
@@ -30,6 +32,7 @@ const Price = styled.p`
 
 const About = styled.div`
   font-size: 14px;
+  font-weight: 500;
   margin-left: 20px;
   margin-right: 40px;
   display: -webkit-box;

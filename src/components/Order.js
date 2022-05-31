@@ -23,7 +23,7 @@ const Order = () => {
     return (
       <OrderWrapper>
         <BackgroundImg>
-          <Title> You Don't have any orders</Title>
+          <Title>You don't have any orders</Title>
           <SubTitle>책을 추가해주세요</SubTitle>
         </BackgroundImg>
       </OrderWrapper>
@@ -61,7 +61,7 @@ const Order = () => {
         })}
 
         <div>
-          <hr />
+          <Hr />
           <div className="totalItem">
             <div className="total">Total</div>
             <div className="PriceBox">
@@ -82,7 +82,9 @@ const OrderWrapper = styled.aside`
   margin: 0 auto;
   min-height: 250px;
   border-radius: 10px;
-  box-shadow: 15px 10px 10px #cccccc;
+  /* box-shadow: 15px 10px 10px #cccccc; */
+  box-shadow: 3px 3px 20px 3px #dddddd;
+
   overflow: hidden;
 
   h1 {
@@ -148,6 +150,12 @@ const OrderWrapper = styled.aside`
       }
     }
   }
+`;
+
+const Hr = styled.hr`
+  height: 1.5px;
+  border: 0;
+  background-color: #ededed;
 `;
 
 const BackgroundImg = styled.div`

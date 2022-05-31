@@ -15,8 +15,8 @@ const Section = styled.section`
   margin: 0 auto;
   width: 100%;
   height: 55%;
-  /* box-shadow: 0px 1px 1px #f2f2f2; */
-  box-shadow: 0px 3px 5px #cccccc;
+  /* box-shadow: 0px 3px 5px #cccccc; */
+  box-shadow: 3px 3px 20px 3px #eeeeee;
 `;
 
 const HeaderWrapper = styled.div`
@@ -35,11 +35,6 @@ const LogoImg = styled.img.attrs({
   src: `${LogoImgFile}`,
 })`
   width: 120px;
-  opacity: 100%;
-
-  &:hover {
-    opacity: 70%;
-  }
 `;
 
 const Twitter = styled.div`

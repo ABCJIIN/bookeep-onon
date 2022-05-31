@@ -60,7 +60,7 @@ const BookListWrapper = styled.li`
   width: 80%;
   margin: auto;
   grid-gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 `;
 const BookItem = styled.dl`
   position: relative;
@@ -101,20 +101,20 @@ const BookItem = styled.dl`
       }
       .bookPublisher {
         margin: 5px auto;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 500;
       }
       .bookTitle {
         margin-bottom: 5px;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 800;
       }
       .bookPrice {
         margin-bottom: 5px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         strike {
-          font-size: 13px;
+          font-size: 12px;
           margin-left: 5px;
           color: #888888;
         }
@@ -127,6 +127,10 @@ const BookItem = styled.dl`
           width: 32px;
           height: 32px;
           margin-right: 20px;
+          &:hover {
+            filter: invert(9%) sepia(92%) saturate(6532%) hue-rotate(10deg)
+              brightness(89%) contrast(116%);
+          }
         }
       }
     }

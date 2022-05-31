@@ -13,8 +13,10 @@ const ImgWrapper = styled.div`
 `;
 
 const Img = styled.img`
-  margin: 10px auto;
+  margin: 40px auto;
   width: 70%;
+  /* box-shadow: 10px 10px 10px 10px #eeeeee; */
+  box-shadow: 8px 8px 8px #666666;
 `;
 
 const UlWrapper = styled.div`

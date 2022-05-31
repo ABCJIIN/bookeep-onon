@@ -23,7 +23,8 @@ const AdContainer = styled.div`
   height: 500px;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 15px 10px 10px #cccccc;
+  /* box-shadow: 15px 10px 10px #cccccc; */
+  box-shadow: 3px 3px 20px 3px #dddddd;
 `;
 
 const AdTitle = styled.div`

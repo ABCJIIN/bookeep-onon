@@ -21,7 +21,7 @@ const NavMenuList = styled.div`
   height: 100%;
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 15px 10px 10px #cccccc;
+  box-shadow: 3px 3px 20px 3px #dddddd;
 `;
 
 const NavContainer = styled.ul`
@@ -30,7 +30,7 @@ const NavContainer = styled.ul`
 `;
 
 const NavWrapper = styled.li`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   position: relative;
   padding: 30px 0 30px 0;
@@ -42,9 +42,10 @@ const NavWrapper = styled.li`
   transition-property: width, background-color;
 
   .icon {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     position: absolute;
+    padding-left: 10px;
   }
 
   &:hover {
@@ -62,7 +63,7 @@ function NavMenu() {
           <NavContainer>
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               <NavWrapper>
-                오늘의 책
+                오늘의책
                 <FaAngleRight className="icon" />
               </NavWrapper>
             </Link>

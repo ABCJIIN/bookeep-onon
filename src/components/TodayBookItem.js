@@ -14,6 +14,7 @@ const Img = styled.img`
     transition-property: opacity;
     transition-duration: 0.5s;
     opacity: 100%;
+    cursor: pointer;
   }
 `;
 

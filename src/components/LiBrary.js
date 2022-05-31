@@ -24,7 +24,7 @@ const LiBrary = () => {
       <div className="searchBox">
         <input
           type="text"
-          placeholder="검색어를 입력해 주세요."
+          placeholder="검색어를 입력해주세요."
           name="query"
           onKeyDown={onEnter}
           onChange={onTextUpdate}
@@ -48,7 +48,9 @@ const LiBraryWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    margin-top: 0;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
   .books {
     display: flex;
@@ -69,18 +71,19 @@ const LiBraryWrapper = styled.div`
     font-weight: 400;
     padding: 0;
     text-indent: 20px;
+    box-shadow: 3px 3px 20px 3px #eeeeee;
   }
   .icon {
     font-size: 22px;
     position: relative;
     left: -40px;
-    top: 2px;
+    top: 5px;
   }
 `;
 
 const BookListWrapper = styled.ul`
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 40px 0;
   width: 100%;
 `;
 

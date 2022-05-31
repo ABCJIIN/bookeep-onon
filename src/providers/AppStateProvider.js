@@ -19,7 +19,7 @@ const AppStateProvider = ({ children }) => {
       query: query,
       sort: "accuracy",
       page: 1,
-      size: 9,
+      size: 12,
     };
 
     const { data } = await bookSearch(params);
