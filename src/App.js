@@ -18,7 +18,8 @@ function App() {
       <AppStateProvider>
         <Routes>
           <Route
-            path={`/${process.env.REACT_APP_HOST}`}
+            // path={`/${process.env.REACT_APP_HOST}`}
+            path="/"
             element={<MainPage />}
           />
           <Route path="/library" element={<LibraryPage />} />

@@ -62,7 +62,8 @@ function NavMenu() {
         <NavMenuList>
           <NavContainer>
             <Link
-              to={`/${process.env.REACT_APP_HOST}`}
+              // to={`/${process.env.REACT_APP_HOST}`}
+              to="/"
               style={{ textDecoration: "none", color: "black" }}
             >
               <NavWrapper>
