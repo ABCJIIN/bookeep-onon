@@ -1,1 +1,1 @@
-export default process.env.KAKAO_API;
+// export default process.env.KAKAO_API;

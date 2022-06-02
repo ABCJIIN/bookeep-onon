@@ -17,7 +17,10 @@ function App() {
     <>
       <AppStateProvider>
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route
+            path={`/${process.env.REACT_APP_HOST}`}
+            element={<MainPage />}
+          />
           <Route path="/library" element={<LibraryPage />} />
           <Route path="/*" element={<H2>not found</H2>} />
         </Routes>
