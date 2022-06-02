@@ -61,11 +61,7 @@ function NavMenu() {
       <Section>
         <NavMenuList>
           <NavContainer>
-            <Link
-              // to={`/${process.env.REACT_APP_HOST}`}
-              to="/"
-              style={{ textDecoration: "none", color: "black" }}
-            >
+            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               <NavWrapper>
                 오늘의책
                 <FaAngleRight className="icon" />
